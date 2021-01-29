@@ -1,0 +1,51 @@
+  body {
+    background-color: rgb(230,255,230);
+    margin: 0;
+  }
+  h1 {
+    margin: 0;
+    padding: 20px;
+    border-bottom:solid gray 10px;
+    color:black;
+    font-size: 50px; text-align: center;
+  }
+
+  a {
+    color:black;
+    text-decoration: none;
+  }
+
+  ul {
+    width:200px;
+    border-right:10px gray solid;
+    font-size: 25px;
+    color:gray;
+    margin: 0;
+    padding: 30px;
+
+  }
+  li{
+    margin-bottom: 10px;
+  }
+  #mother {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+}
+#mother ul {
+ padding-left: 60px;
+}
+#mother p {
+ text-align: center;
+ margin: 0;
+ margin-top: 125px;
+ font-size: 50px;
+ color: green;
+}
+@media (max-width:630px) {
+#mother {
+  display: block;
+}
+ul {
+border-right: none;
+}
+}
