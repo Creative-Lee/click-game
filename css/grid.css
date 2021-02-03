@@ -1,0 +1,68 @@
+body {
+  margin:0;
+    }
+.sidebar_A ul
+  {
+    list-style-type: none;
+  }
+.sidebar_A a
+{
+  color: #010101;
+  text-decoration: none;
+}
+
+.container
+ {
+  display: grid;
+  grid-template-columns: 1fr 70% 1fr;
+  grid-auto-rows: minmax(auto, auto) ;
+  grid-template-areas:
+  "header header header"
+  "menu menu menu"
+  "sidebar_A main sidebar_B"
+  ". . . "
+  "footer footer footer";
+  margin: 0 50px;
+  padding: 50px 0;
+  font-weight: bold;
+  color: gray;
+  }
+
+.item
+{
+  padding: 10px;
+}
+
+.header
+{
+  grid-area: header;
+
+}
+
+.menu
+{
+  grid-area: menu;
+}
+
+.sidebar_A
+{
+  grid-area: sidebar_A;
+}
+
+.main
+{
+   grid-area: main;
+   border-left: solid black 2px;
+   border-right: solid black 2px;
+ }
+
+.sidebar_B
+ {
+   grid-area: sidebar_B;
+  }
+
+.footer
+{
+  grid-area: footer;
+
+ }
