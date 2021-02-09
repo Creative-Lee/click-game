@@ -50,15 +50,20 @@ body {
 /* menu 끝 */
 
 /* main 시작 */
-.main
-{
-   grid-area: main;
-   border-left: solid gray 2px;
-   border-right: solid gray 2px;
-   text-align: center;
-   
+.main {
+    grid-area: main;
+    border-left: solid gray 2px;
+    border-right: solid gray 2px;
+  }
+ 
+ .main a {
+     color: #010101;
+     text-decoration: none;
  }
-/* main 끝 */
+ .main h2 {
+     text-align: center;
+ }
+ /* main 끝 */
 
 /* container 시작 */
 .container {
@@ -75,14 +80,13 @@ body {
   margin: 0 50px;
   padding: 50px 0;
   }
-/* container 끝 */
+  /* container 끝 */
 
 .sidebar_A
 {
   grid-area: sidebar_A;
   text-align: center;
 }
-
 
 
 .sidebar_B

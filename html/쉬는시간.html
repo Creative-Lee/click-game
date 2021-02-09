@@ -1,84 +1,47 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-
   <head>
-    <meta charset=utf-8>
-    <title>쉬는시간</title>
-    <style>
-    #mother {
-      display: grid;
-      grid-template-columns: 1fr 3fr;
-      grid-gap: 10px;
-
-    }
-    #mother h2 {
-          color: gray;
-          font-size: 30px;
-            border-right: solid rgb(100, 140, 0) 10px;
-            margin: 0;
-            text-align: center;
-          align-items: center;
-          display: flex;
-    }
-    .son .real{
-      display: grid;
-      grid-template-rows: 33.33333% 1fr 1fr ;
-      grid-gap: 20px;
-    }
-    ol {padding-left:30px;
-      padding-right: 30px;
-      list-style-type: none;
-          }
-
-    body {
-      background-color: rgb(230,255,230);
-      margin: 0;
-    }
-  #top h1 {
-      margin: 0;
-      padding: 20px;
-      border-bottom:solid rgb(100, 140, 0) 10px;
-      color:black;
-      font-size: 50px; text-align: center;
-        }
- #top a {
-     text-decoration: none;
-     color: rgb(100, 150, 0);
-
- }
-  .real a {
-      text-decoration: none;
-      color: gray
-    }
-  .real img {
-      padding: 8px;
-      width: 100%;
-      border: 3px solid pink
-          }
-  .shit{
-    height: 93%
-  }
-    </style>
-  </head>
-
+    <meta charset="utf-8">
+    <title>grid 연습</title>
+    <link rel="stylesheet" href="../css/쉬는시간.css">
+    </head>
   <body>
- <div id="top">
-   <h1><a href="코생아 도현이의 코딩여행.html" title="홈으로">코생아 도현이의 코딩여행</a>
-   </h1>
- </div>
-    <div id="mother">
-        <h2>도현이는 쉬는 시간에 뭘 하며 보낼까?</h2>
-        <div class="son">
-          <ol class="real">
-            <li><a href="https://kr.leagueoflegends.com/ko-kr/" target="_blank" title="갓겜">1. LOL</a><img class="shit" src="사진/쉬는시간 사진/LOL.png"></li>
-            <li><a href="https://www.youtube.com/" target="_blank" title="정보의 바다">2. YouTube</a>  <img src="사진/쉬는시간 사진/YouTube.png"></li>
-            <li><a href="https://www.netflix.com/browse" target="_blank" title="보자보자 어디보자">3. NETFLIX</a>  <img src="사진/쉬는시간 사진/NETFLIX.png"></li>
-          </div>
-          </ol>
+    <div class="container">
+      <header class="item header">
+        <h1>
+          <a href="../grid.html" title="홈으로">
+            Mr.Lee
+          </a>
+        </h1>
+      </header>
+        <div class="item menu">
+          <nav>
+            <ul>
+              <li><a href="../html/태그정리.html" title="태그사전">태그정리</a></li>
+              <li><a href="../html/쉬는시간.html" title="놀땐 놀자.">쉬는시간</a></li>
+              <li><a href="../html/가리비의 모험.html" title="훈동이가 시켰어요ㅠ">가리비의 모험</a></li>
+              <li><a href="../html/내사랑 방구♥.html" title="내방구♥">내사랑 방구♥</a></li>
+              <li><a href="../html/열정맨.html" title="나다!">열정맨</a></li>
+            </ul>
+          </nav>
         </div>
+        <div class="item sidebar_A">나는 왼쪽 사이드바</div>
+        <div class="item main">
+            <div class="main-M">
+                <h2>도현이는 쉬는 시간에 뭘 하며 보낼까?</h2>
+                <div class="main-S">
+                    <nav>
+                        <ol>
+                            <li><a href="https://kr.leagueoflegends.com/ko-kr/" target="_blank" title="갓겜">1. LOL</a><img src="../source/쉬는시간/LOL.png"></li>
+                            <li><a href="https://www.youtube.com/" target="_blank" title="정보의 바다">2. YouTube</a>  <img src="../source/쉬는시간/YouTube.png"></li>
+                            <li><a href="https://www.netflix.com/browse" target="_blank" title="보자보자 어디보자">3. NETFLIX</a>  <img src="../source/쉬는시간/NETFLIX.png"></li>
+                          </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="item sidebar_B">나는 오른쪽 사이드바</div>
+        <footer class="item footer">나는 풋터</footer>
     </div>
-
-
   </body>
-
 </html>
