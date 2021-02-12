@@ -62,16 +62,22 @@ body {
      font-size: 40px;
      text-align: center;
  }
- .main img {
-    width: 49.4%;
-    display: inline-block;
-    
-        }
-.main .img-wrap {
-    width: 90%;
-    height: 100%;    
+ .main .하트 {
+   height: 200px;
+ }
+ .main .케이크 {
+   height: 200px;
+ }
+ .main img {    
+  width: 100%;     
+ }
+ .main .img-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 162.97px minmax(200px, auto);
     padding: 0 5% 0 5%;
-}
+    grid-gap: 5px;
+   }
 
 /* main 끝 */
 
