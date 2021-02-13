@@ -64,6 +64,10 @@ body {
      text-align: center;
      font-size: 40px;
  }
+ .main ul {
+   padding: 0 5% 0 5%;
+  
+ }
  /* main 끝 */
 
 /* container 시작 */
