@@ -13,7 +13,47 @@
             Mr.Lee
           </a>
         </h1>
-        <input class="night" type="button" value="야간모드" onclick="alert('아직 구현중입니다.')">
+        
+
+        <script>
+          function handler(self){
+          var target_body = document.querySelector('body')
+          if (self.value === 'night')
+          {
+            target_body.style.backgroundColor='gray'
+            target_body.style.color ='white'
+            self.value = 'day'
+            
+            var alist = document.querySelectorAll('a');
+            i = 0;
+            while(i<alist.length)
+            {
+              alist[i].style.color = 'white';
+              i=i+1;
+            }
+            
+          }
+          else
+          {
+            target_body.style.backgroundColor='rgb(230,255,230)'
+            target_body.style.color='black'
+            self.value = 'night'
+
+            var alist = document.querySelectorAll('a');
+            i = 0;
+            while(i<alist.length)
+            {
+              alist[i].style.color = 'black';
+              i=i+1;
+            }
+            
+          } 
+        }                 
+        </script>
+        <input type="button" value="night" onclick="handler(this);">
+
+        
+       
       </header>
         <div class="item menu">
           <nav>
