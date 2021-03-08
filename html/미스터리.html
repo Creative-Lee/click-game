@@ -4,6 +4,43 @@
     <meta charset="utf-8">
     <title>grid 연습</title>
     <link rel="stylesheet" href="../css/미스터리.css">
+    
+    <script>
+      function handler(self){
+      var target_body = document.querySelector('body');
+      if (self.value === 'night')
+      {
+        target_body.style.backgroundColor='black';
+        target_body.style.color ='white';
+        self.value = 'day';
+        
+        var alist = document.querySelectorAll('a');
+        i = 0;
+        while(i<alist.length)
+        {
+          alist[i].style.color = 'white';
+          i=i+1;
+        }
+        
+      }
+      else
+      {
+        target_body.style.backgroundColor='rgb(230,255,230)'
+        target_body.style.color='black'
+        self.value = 'night'
+
+        var alist = document.querySelectorAll('a');
+        i = 0;
+        while(i<alist.length)
+        {
+          alist[i].style.color = 'black';
+          i=i+1;
+        }
+        
+      } 
+    }                 
+    </script>
+
     </head>
   <body>
     <div class="container">
@@ -15,41 +52,7 @@
         </h1>
         
 
-        <script>
-          function handler(self){
-          var target_body = document.querySelector('body')
-          if (self.value === 'night')
-          {
-            target_body.style.backgroundColor='gray'
-            target_body.style.color ='white'
-            self.value = 'day'
-            
-            var alist = document.querySelectorAll('a');
-            i = 0;
-            while(i<alist.length)
-            {
-              alist[i].style.color = 'white';
-              i=i+1;
-            }
-            
-          }
-          else
-          {
-            target_body.style.backgroundColor='rgb(230,255,230)'
-            target_body.style.color='black'
-            self.value = 'night'
-
-            var alist = document.querySelectorAll('a');
-            i = 0;
-            while(i<alist.length)
-            {
-              alist[i].style.color = 'black';
-              i=i+1;
-            }
-            
-          } 
-        }                 
-        </script>
+        
         <input type="button" value="night" onclick="handler(this);">
 
         
