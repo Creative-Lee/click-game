@@ -9,7 +9,7 @@
     <h2>Create</h2>
     <script>
         var SSS = [
-            'Do','DDo'
+            "Do","DDo"
         ]
         SSS.push("DDDo");
         var i = 0;
@@ -27,9 +27,15 @@
         document.write("2등: "+vvs.second+"<br>"); 
         vvs.third = "DDDo";
         document.write("3등: "+vvs.third+"<br>");
-        vvs["fou   rth"] = "DDDDo";
-        document.write("4등: "+vvs["fou   rth"]+"<br>");
+        vvs["fourth"] = "DDDDo";
+        document.write("4등: "+vvs["fourth"]+"<br>");
+    </script>
+    <h2>Iterrate</h2>
 
+    <script>
+    for(var key in vvs){
+    document.write(key+': '+vvs[key]+'<br>');
+    }   
     </script>
     
 </body>
