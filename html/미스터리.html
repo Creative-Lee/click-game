@@ -4,42 +4,39 @@
     <meta charset="utf-8">
     <title>grid 연습</title>
     <link rel="stylesheet" href="../css/미스터리.css">
-    
-    <script>
-      function handler(self){
-      var target_body = document.querySelector('body');
-      if (self.value === 'night')
-      {
-        target_body.style.backgroundColor='black';
-        target_body.style.color ='white';
-        self.value = 'day';
-        
-        var alist = document.querySelectorAll('a');
-        i = 0;
-        while(i<alist.length)
-        {
-          alist[i].style.color = 'white';
-          i=i+1;
-        }
-        
-      }
-      else
-      {
-        target_body.style.backgroundColor='rgb(230,255,230)'
-        target_body.style.color='black'
-        self.value = 'night'
 
+    <script>
+      function LinkSetColor(color)
+      {
         var alist = document.querySelectorAll('a');
-        i = 0;
+        var i = 0;
         while(i<alist.length)
+          {
+            alist[i].style.color = color;
+            i=i+1;
+          }
+      }
+      function handler(self)
+      {
+        var target_body = document.querySelector('body');
+        if (self.value === 'night')
         {
-          alist[i].style.color = 'black';
-          i=i+1;
+          target_body.style.backgroundColor='black';
+          target_body.style.color ='white';
+          self.value = 'day';
+          LinkSetColor('white');
+          
         }
-        
-      } 
-    }                 
-    </script>
+        else
+        {
+          target_body.style.backgroundColor='rgb(230,255,230)';
+          target_body.style.color='black';
+          self.value = 'night';
+          LinkSetColor('black');
+          
+        } 
+      }                 
+      </script>
 
     </head>
   <body>
@@ -54,8 +51,6 @@
 
         
         <input type="button" value="night" onclick="handler(this);">
-
-        
        
       </header>
         <div class="item menu">
