@@ -7,36 +7,38 @@
 <body>
     <h1>object</h1>
     <h2>Create</h2>
-    <script>
-        var SSS = [
-            "Do","DDo"
-        ]
-        SSS.push("DDDo");
-        var i = 0;
-        var ii = 0;
-        while(i < SSS.length){
-            document.write((i+1)+"등: "+SSS[i]+"<br>");
-            i = i+1;
-        }
-       
-        var vvs = {
+    <script>            
+        const vvs = {
             "first":"Do",
             "second":"DDo"    
         };
-        document.write("1등: "+vvs.first+"<br>");
-        document.write("2등: "+vvs.second+"<br>"); 
+        document.write(vvs.first+"<br>");
+        document.write(vvs.second+"<br>"); 
         vvs.third = "DDDo";
-        document.write("3등: "+vvs.third+"<br>");
+        document.write(vvs.third+"<br>");
         vvs["fourth"] = "DDDDo";
-        document.write("4등: "+vvs["fourth"]+"<br>");
+        document.write(vvs["fourth"]+"<br>");
     </script>
-    <h2>Iterrate</h2>
 
+    <h2>Iterrate</h2>
     <script>
-    for(var key in vvs){
+    for(key in vvs){
     document.write(key+': '+vvs[key]+'<br>');
     }   
     </script>
     
+    <h2> Property & Method</h2>
+    <script>
+        vvs.showAll = function(){
+            for(const key in this){
+                if(key!=="showAll"){
+                document.write(key+': '+this[key]+'<br>')
+                };
+            }
+        }   
+        
+        vvs.showAll();
+            
+    </script>
 </body>
 </html>

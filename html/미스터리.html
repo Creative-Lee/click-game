@@ -6,22 +6,28 @@
     <link rel="stylesheet" href="../css/미스터리.css">
 
     <script>
-      function LinkSetColor(color){
-        var alist = document.querySelectorAll('a');
-        var i = 0;
-        while(i<alist.length){
-          alist[i].style.color = color;
-          i = i + 1;
+      var Link = { 
+        setColor:function (color){
+          var alist = document.querySelectorAll('a');
+          var i = 0;
+          while(i<alist.length){
+            alist[i].style.color = color;
+            i = i + 1;
+          }
         }
       }
-      function BodySetColor(color){
+     
+      var Body = {
+        setColor:function (color){
         document.querySelector('body').style.color = color;
+        },
+        setBackgroundColor:function (color){
+        document.querySelector('body').style.backgroundColor = color;  
+        }
       }
-      function BodySetBackgroundColor(color){
-        document.querySelector('body').style.backgroundColor = color;
-      }
+     
+ 
       function handler(self){ 
-        var target = document.querySelector('body');
         if(self.value === 'night'){
           Body.setBackgroundColor('black');
           Body.setColor('white');
@@ -46,11 +52,9 @@
             Mr.Lee
           </a>
         </h1>
-        
 
-        
-        <input type="button" value="night" onclick="handler(this);">
-       
+        <input type="button" value="night" onclick="handler(this);" style="color: rgb(41, 92, 136);font-size: 17px;">
+
       </header>
         <div class="item menu">
           <nav>
