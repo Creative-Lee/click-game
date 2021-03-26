@@ -2,33 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/연습.css">
     <script src="연습.js"></script>
-    <script>
-        function mouseEnter(self){
-            if(self.style.color == 'rgb(218, 207, 64)'){
-                self.style.transform = 'translateX(-50%) translateY(0%)  rotate(0.25turn)';
-                self.style.color = 'rgb(218, 207, 63)'
-            }
-            else if(self.style.color == 'rgb(218, 207, 63)'){
-                self.style.transform = ' translateX(-50%) translateY(0%) rotate(0.25turn)'; 
-                self.style.color = 'rgb(218, 207, 62)'
-            }
-            else if(self.style.color == 'rgb(218, 207, 62)'){
-                self.style.transform = 'translateX(-50%) translateY(0%) rotate(0.25turn)'; 
-                self.style.color = 'rgb(218, 207, 61)'  
-            }
-        }
-     </script>
+
     <title>Document</title>
    
 </head>
 <body>
     <h1>hihi</h1>
     <a target="blank" style="display: block;" href="https://www.naver.com">go naver</a>
-    <input class="button" type="button" value="black" style="position: absolute; transform: translateY(-50%) translateX(-50%);
-    top: 50%; left: 50%; margin: 0; width:200px; height: 100px; border-color: rgb(255, 0, 140); color: rgb(218, 207, 64); background-color:rgb(247, 0, 95);" 
+    <input id="block" type="button" value="black" 
     onclick="handler(this)"
-    onmouseenter="mouseEnter(this)" 
+    onmouseenter="mouseEnter(this)"
     >  
     
     

@@ -35,3 +35,15 @@ function handler(self){
         self.value = 'black';
     }        
 }
+
+// 버튼 뺑뺑이 
+function mouseEnter(self){
+    if(self.style.backgroundColor == 'rgb(247, 0, 95)'){
+        self.style.transform = 'translateX(250%) translateY(250%)';
+        self.style.backgroundColor = 'rgb(247, 0, 30)'
+    }
+    else{
+        self.style.transform = 'translateX(-250%) translateY(-250%)';
+        self.style.backgroundColor = 'rgb(247, 0, 95)'
+    }
+}
