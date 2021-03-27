@@ -1,4 +1,4 @@
-#block {
+#b1 {
     position: absolute; 
     transform: translateX(-50%) translateY(-50%);
     top: 50%; left: 50%;
@@ -15,7 +15,23 @@
     
 }
 
-보노 빨노 보녹 빨녹 빨노 
-보노 보녹 빨녹 빨노 
-보노 보녹 빨녹 빨노 
-보노
+#b2 {
+    position: absolute; 
+    transform: translateX(0%) translateY(0%);
+    top: 30%; left: 30%;
+    margin: 0;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    border-color: rgb(255, 0, 140); 
+    color: rgb(218, 207, 64);
+    /*color: rgb(50, 10, 15);*/
+
+    background-color:rgb(247, 0, 255);
+   /* background-color:rgb(247, 0, 95);*/
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}

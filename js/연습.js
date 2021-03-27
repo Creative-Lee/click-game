@@ -47,3 +47,12 @@ function mouseEnter(self){
         self.style.backgroundColor = 'rgb(247, 0, 95)'
     }
 }
+
+
+// addEventListener 사용
+const b2 = document.getElementById('b2')
+b2.addEventListener('mouseenter' ,function(event){
+    event.value = 'hey!'
+});
+
+
