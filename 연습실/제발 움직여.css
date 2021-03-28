@@ -1,0 +1,19 @@
+#catch {
+    width: 100px;
+    height: 100px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    border: solid pink 50px;
+    width: 100%-50px;
+    height: 100%-50px;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    
+}
