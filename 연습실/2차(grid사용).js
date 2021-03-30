@@ -3,7 +3,7 @@ window.onload = function(){
     clickButton.addEventListener("click" , function(){                 
         clickButton.style.backgroundColor =  'pink';
         clickButton.style.position =  'static' ;                        
-        clickButton.style.gridArea = 'click'+ Math.round((Math.random()*25));
+        clickButton.style.gridArea = 'click'+ Math.round((Math.random()*24));
         
     })
     let clickCounter = 0;
