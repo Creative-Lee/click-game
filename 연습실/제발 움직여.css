@@ -1,19 +1,40 @@
-#catch {
-    width: 100px;
-    height: 100px;
-}
 
 body {
     padding: 0;
     margin: 0;
-    border: solid pink 50px;
     width: 100%-50px;
     height: 100%-50px;
 }
 
-.box {
+#catch {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    grid-area: click5;
+    width: 100px;
+    height: 100px;
+}
+
+
+.scoreBox {
+    text-align: center;
+}
+.arena{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr minmax(505px,auto)  1fr;
+    grid-template-rows: auto;
+}
+.buttonArea {
+    display: grid;
+    grid-template-columns: repeat(5,100px);
+    grid-template-rows: repeat(5,100px);
+    grid-template-areas:
+    "click0 click1 click2 click3 click4"
+    "click5 click6 click7 click8 click9"
+    "click10 click11 click12 click13 click14"
+    "click15 click16 click17 click18 click19"
+    "click20 click21 click22 click23 click24"
+    ;
     
+    border: solid salmon 2.5px;
 }

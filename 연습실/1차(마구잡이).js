@@ -5,13 +5,13 @@
 // window.onload = fuction(){} 로 덮기    or   body태그 밑에 script태그 달기
 window.onload = function(){                                       
     const clickButton = document.getElementById("catch");         
-    clickButton.addEventListener("click" , function(){
-        this.style.backgroundColor = 'green' ;
+    clickButton.addEventListener("click" , function(){                  // == function(parameter)
+        this.style.backgroundColor = 'green' ;                          // ==  parameter.target 
         this.style.position = 'absolute';
         this.style.top = Math.round((Math.random()*100))+'%';
         this.style.left = Math.round((Math.random()*100))+'%';
     })
-    var clickCounter = 0;
+    let clickCounter = 0;
     const score = document.getElementById("score");
     clickButton.addEventListener('click' , function(){
         clickCounter += 1;
