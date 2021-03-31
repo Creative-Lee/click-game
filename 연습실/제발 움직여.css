@@ -1,16 +1,19 @@
 
 body {
-    padding: 0;
+    padding: 30px;
     margin: 0;
     width: 100%-50px;
     height: 100%-50px;
+    border-top: rgba(243, 140, 166, 0.664) solid 30px;
+    border-bottom: rgba(243, 140, 166, 0.664) solid 30px;
+
 }
 
 #catch {
     position: relative;
     grid-area: click12;
-    width: 100px;
-    height: 100px;
+    width: 101px;
+    height: 101px;
     background-color: pink;
     font-size: 20px;
     outline: none;
@@ -19,7 +22,9 @@ body {
     color: white;
 }
 
-
+#score,#timer {
+ text-align: center;
+}
 .scoreBox {
     text-align: center;
 }
