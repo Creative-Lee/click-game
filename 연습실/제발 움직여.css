@@ -1,102 +1,133 @@
-
 body {
-    padding: 0;
-    margin: 0;
-    width: 100%-50px;
-    height: 100%-50px;
-    border-top: rgba(243, 140, 166, 0.664) solid 30px;
-    background-image: url(../source/picture/pinkSky.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    font-family: 'Gamja Flower', cursive;
+  padding: 0;
+  margin: 0;
+  width: 100%-50px;
+  height: 100%-50px;
+  border-top: rgba(243, 140, 166, 0.664) solid 30px;
+  background-image: url(../source/picture/pinkSky.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Gamja Flower", cursive;
 }
 
 #catch {
-    position: relative;
-    grid-area: click12;
-    width: 101px;
-    height: 101px;
-    background-color: pink;
-    font-size: 20px;
-    outline: none;
-    border: none;
-    font-weight: bolder;
-    color: white;
+  position: relative;
+  grid-area: click12;
+  width: 101px;
+  height: 101px;
+  background-color: pink;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  font-weight: bolder;
+  color: white;
 }
 .scoreBox h1 {
-    font-weight:normal ;
-    padding: 0;
-    margin: 0;
-    border: 0;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
 
-#score,#timer {
+#score,
+#timer {
   text-align: center;
 }
 .scoreArea {
- text-align: center;
-  
+  text-align: center;
 }
-
-.manualArea {
-    margin-left: 2%;
+.areaContainer {
+  padding-left: 2%;
+  padding-right: 2%;
 }
-.manualArea h1{
-    font-size: 50px;
+.manualArea h1 {
+  margin-top: 0;
+  font-size: 50px;
 }
-.manualArea h2{
-    font-size: 35px;
-    background-color: rgba(243, 140, 166, 0.664);
-    display: inline;
+.manualArea h2 {
+  font-size: 35px;
+  background-color: rgba(243, 140, 166, 0.664);
+  display: inline;
 }
-.manualArea h3{
-    margin-top: 0;
-    margin-bottom: 1px;
-    font-size: 25px;
+.manualArea h3 {
+  margin-top: 0;
+  margin-bottom: 1px;
+  font-size: 25px;
 }
 
 #nameArea {
-    text-align: center;
-    font-size: 50px;
-    font-weight: bolder;
-    padding-bottom: 10px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bolder;
+  padding-bottom: 10px;
 }
-.arena{
-    display: grid;
-    grid-template-columns: 1fr minmax(505px,auto) 1fr;
-    grid-template-rows: auto minmax(100px,auto);
-    
-    
-    padding-left: 2%;
-    padding-right: 2%;
-   
+.arena {
+  display: grid;
+  grid-template-columns: 1fr minmax(500px, auto) 1fr;
+  grid-template-rows: auto minmax(100px, auto);
 }
 .buttonArea {
-    display: grid;
-    grid-template-columns: repeat(5,100px);
-    grid-template-rows: repeat(5,100px);
-    grid-template-areas:
+  display: grid;
+  grid-template-columns: repeat(5, 100px);
+  grid-template-rows: repeat(5, 100px);
+  grid-template-areas:
     "click0 click1 click2 click3 click4"
     "click5 click6 click7 click8 click9"
     "click10 click11 click12 click13 click14"
     "click15 click16 click17 click18 click19"
-    "click20 click21 click22 click23 click24"
-    ;
-    background-color: rgba(243, 140, 166, 0.664);
-    border: solid rgba(238, 143, 174, 0.815) 3px;
-    column-gap: 2.5px;
-    row-gap: 2.5px;
+    "click20 click21 click22 click23 click24";
+  background-color: rgba(243, 140, 166, 0.664);
+  border: solid rgba(238, 143, 174, 0.815) 3px;
+  column-gap: 2.5px;
+  row-gap: 2.5px;
 }
 
 .line {
-    background-color: white;
+  background-color: white;
 }
 
+.leftWall {
+  font-size: 20px;
+}
 
+@media (max-width: 480px) {
+  .manualArea h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 40px;
+  }
 
-
-.leftWall{
+  .manualArea h3 {
+    margin-top: 0;
+    margin-bottom: 1px;
     font-size: 20px;
-    
-}
+  }
 
+  .manualArea h2 {
+    font-size: 20px;
+    background-color: rgba(243, 140, 166, 0.664);
+    display: block;
+  }
+
+  .scoreArea h1 {
+    margin: 0;
+  }
+
+  .arena {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: none;
+  }
+
+  .buttonArea {
+    display: grid;
+    grid-template-columns: repeat(5, 78px);
+    grid-template-rows: repeat(5, 78px);
+  }
+
+  #catch {
+    width: 79px;
+    height: 79px;
+    font-size: 15px;
+  }
+}

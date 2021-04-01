@@ -3,8 +3,6 @@ window.onload = function(){
     clickButton.addEventListener("click" , function(){                 
         clickButton.style.backgroundColor =  'pink';
         clickButton.style.position =  'static' ;
-        clickButton.style.width = "100px"
-        clickButton.style.height = "100px"                      
         clickButton.value = 'click fast!'
         clickButton.style.gridArea = 'click'+ Math.round((Math.random()*24));
     });
