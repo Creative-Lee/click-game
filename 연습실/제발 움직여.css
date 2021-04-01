@@ -1,12 +1,14 @@
 
 body {
-    padding: 30px;
+    padding: 0;
     margin: 0;
     width: 100%-50px;
     height: 100%-50px;
     border-top: rgba(243, 140, 166, 0.664) solid 30px;
-    border-bottom: rgba(243, 140, 166, 0.664) solid 30px;
-
+    background-image: url(../source/picture/pinkSky.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Gamja Flower', cursive;
 }
 
 #catch {
@@ -21,17 +23,53 @@ body {
     font-weight: bolder;
     color: white;
 }
+.scoreBox h1 {
+    font-weight:normal ;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
 
 #score,#timer {
- text-align: center;
+  text-align: center;
 }
-.scoreBox {
+.scoreArea {
+ text-align: center;
+  
+}
+
+.manualArea {
+    margin-left: 2%;
+}
+.manualArea h1{
+    font-size: 50px;
+}
+.manualArea h2{
+    font-size: 35px;
+    background-color: rgba(243, 140, 166, 0.664);
+    display: inline;
+}
+.manualArea h3{
+    margin-top: 0;
+    margin-bottom: 1px;
+    font-size: 25px;
+}
+
+#nameArea {
     text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+    padding-bottom: 10px;
 }
 .arena{
     display: grid;
-    grid-template-columns: 1fr minmax(505px,auto)  1fr;
-    grid-template-rows: auto;
+    grid-template-columns: 1fr minmax(505px,auto) 1fr;
+    grid-template-rows: auto minmax(100px,auto);
+    
+    
+    padding-left: 2%;
+    padding-right: 2%;
+   
 }
 .buttonArea {
     display: grid;
@@ -45,7 +83,7 @@ body {
     "click20 click21 click22 click23 click24"
     ;
     background-color: rgba(243, 140, 166, 0.664);
-    border: solid rgb(241, 76, 47) 3px;
+    border: solid rgba(238, 143, 174, 0.815) 3px;
     column-gap: 2.5px;
     row-gap: 2.5px;
 }
@@ -53,3 +91,12 @@ body {
 .line {
     background-color: white;
 }
+
+
+
+
+.leftWall{
+    font-size: 20px;
+    
+}
+

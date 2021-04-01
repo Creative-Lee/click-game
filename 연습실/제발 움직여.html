@@ -2,16 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="제발 움직여.css">
-    <script src="2차(grid사용).js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
+    <script src="3차(타이머).js"></script>
 </head>
 <body>
-    <div class="scoreBox">
-        <h1 id="score">blah~</h1>
-        <h1 id="timer">blah~</h1>
+    <div class="areaContainer">
+        <div class="manualArea">
+           <h1 class="title"> Game rules ___________</h1>
+           <h3>1. 'catch' 버튼을 누르면 게임이 시작됩니다.</h3>
+           <h3>2. 무작위로 돌아다니는 버튼을 클릭 하면 됩니다.</h3>
+           <h3>3. 가능한 빠르게 버튼을 클릭하세요!</h3>
+           <h3>4. 총 25번의 클릭을 완료하면 당신의 기록이 알람으로 출력됩니다.</h3>
+           <h2>Warning : 버튼 이외의 공간을 클릭하면 각오하세요^^</h2>
+        </div>
+        <div id="nameArea"></div>
+        <div class="scoreArea">
+            <h1 id="score">focus on!</h1>
+            <h1 id="timer">↓ ↓ ↓</h1>
+        </div>
     </div>
-    <div class="arena"> 
+    <div class="arena">
         <div class="leftWall"></div>
         <div class="buttonArea">
             <div class="line"></div>
@@ -40,6 +54,9 @@
             <div class="line"></div>
              <input id="catch" type="button" value="catch"></div>
         <div class="rightWall"></div>
+        <div></div> 
+        <div></div> 
+        <div></div> 
     </div>
 
 </body>
