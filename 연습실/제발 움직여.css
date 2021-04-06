@@ -29,8 +29,7 @@ body {
   border: 0;
 }
 
-#score,
-#timer {
+#countReturn,#timerReturn {
   text-align: center;
 }
 .scoreArea {
@@ -55,7 +54,7 @@ body {
   font-size: 25px;
 }
 
-#nameArea {
+#countArea {
   text-align: center;
   font-size: 50px;
   font-weight: bolder;
