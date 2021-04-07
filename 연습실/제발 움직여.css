@@ -29,8 +29,16 @@ body {
   border: 0;
 }
 
-#countReturn,#timerReturn {
+#nameArea {
   text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#countReturn,
+#timerReturn {
+  text-align: center;
+  margin: 0;
 }
 .scoreArea {
   text-align: center;
@@ -43,7 +51,6 @@ body {
   margin-top: 0;
   font-size: 50px;
 }
-
 
 .manualArea h3 {
   margin-top: 0;
@@ -126,5 +133,9 @@ body {
     width: 70px;
     height: 70px;
     font-size: 13px;
+  }
+
+  body {
+    border-top: rgba(243, 140, 166, 0.664) solid 20px;
   }
 }

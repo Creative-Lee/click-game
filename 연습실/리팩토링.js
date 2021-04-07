@@ -25,9 +25,9 @@ window.onload = function(){
             movingButton.style.gridArea = 'click'+ Math.round((Math.random()*24));  //첫 버튼 움직임!!    
 
             timer = setInterval(function(){  // 타이머!!
-                timerReturn.innerHTML = t/10;    
+                timerReturn.innerHTML = t/100;    
                 t += 1 ;
-                },100)
+                },10)
 
             count.innerHTML = c + "/10" ;  //카운터 1        -- 게임set의 기준을 바꾸려면 이것 숫자를 바꿔야함
         }
@@ -38,7 +38,7 @@ window.onload = function(){
         }
         else if(gameStartEnd() == true && c == 10){  //진행중이면 and 카운터가 10에 도달했을 때  -- 게임set의 기준을 바꾸려면 이것 동등연산자(==) 우항 숫자를 바꿔야함
 
-            alert("your record --> " + timerReturn.innerHTML + "s");  //타이머 멈춘 시점  알람 출력
+            alert("당신의 기록은 " + timerReturn.innerHTML + "s 입니다. \n아직 멀었군요^^");  //타이머 멈춘 시점  알람 출력
 
             game = 0;                                       // 게임 시작전으로
 
@@ -52,8 +52,9 @@ window.onload = function(){
             movingButton.style.gridArea = 'click' + 12;  // 버튼 원위치 리셋
         }
     }
-    //const nameArea = document.getElementById("nameArea")
-    //nameArea.innerHTML =  prompt("당신의 이름을 적어주세요!",)
+    
+    const nameArea = document.getElementById("nameArea");                       // 이름 html
+    nameArea.innerHTML =  "hello!  " + prompt("당신의 이름을 적어주세요!",);      // 이름값 받는 prompt
     movingButton.addEventListener('click' , buttonClick);   // 버튼을 클릭하면 buttonClick 함수 실행
     
 }
