@@ -43,11 +43,8 @@ body {
   margin-top: 0;
   font-size: 50px;
 }
-.manualArea h2 {
-  font-size: 35px;
-  background-color: rgba(243, 140, 166, 0.664);
-  display: inline;
-}
+
+
 .manualArea h3 {
   margin-top: 0;
   margin-bottom: 1px;
