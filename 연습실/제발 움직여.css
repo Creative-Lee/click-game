@@ -1,5 +1,6 @@
 html {
   -webkit-appearance: none;
+  appearance: none;  
 }
 body {
   padding: 0;
@@ -15,6 +16,7 @@ body {
 }
 
 #catch {
+  -webkit-appearance: none; 
   position: relative;
   grid-area: click12;
   width: 101px;
@@ -134,6 +136,7 @@ body {
   }
 
   #catch {
+    -webkit-appearance: none; 
     width: 70px;
     height: 70px;
     font-size: 13px;
