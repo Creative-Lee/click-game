@@ -46,16 +46,65 @@ window.onload = function(){
             count.innerHTML = c + "/10" ;  //카운터 1        -- 게임set의 기준을 바꾸려면 이것 숫자를 바꿔야함
         }
         else{
-            alert("당신의 기록은 " + timerReturn.innerHTML + "s 입니다. \n아직 멀었군요^^");  //타이머 멈춘 시점  알람 출력
+            result();
+            //alert("당신의 기록은 " + timerReturn.innerHTML + "s 입니다. \n아직 멀었군요^^");  //타이머 멈춘 시점  알람 출력
             initialize();
+
         }
     }
 
     function getName(){
         const nameArea = document.getElementById("nameArea");                       // 이름 html
         nameArea.innerHTML =  "hello!  " + prompt("당신의 이름을 적어주세요!",);      // 이름값 받는 prompt
+//if(nameArea.innerHTML == "hello!  " + ""  || nameArea.innerHTML == "hello!  " + null){
+//    for(i=100){
+//
+//    }
+//        nameArea.innerHTML =  "hello!  " + prompt("좋게 말할 때 적어주세요^^",);
+//    
+//
+//}
+//
+//
     }
 
+    function result(){
+        let grade = timerReturn.innerHTML
+        let gradeReturn;
+    
+        if(grade >= 7){
+            gradeReturn = "7초이상"
+        }
+        else if((6 <= grade) && (grade < 7)){
+            gradeReturn = "6초"
+        }
+        else if((5 <= grade) && (grade < 6)){
+            gradeReturn = "5초"
+        }
+        else if((4 <= grade) && (grade < 5)){
+            gradeReturn = "4초"
+        }
+        else if((3 <= grade) && (grade < 4)){
+            gradeReturn = "3초"
+        }
+        else if((2 <= grade) && (grade < 3)){
+            gradeReturn = "2초"
+        }
+        switch(gradeReturn){
+            case "7초이상" : alert("당신의 기록은 " + timerReturn.innerHTML + "s 입니다. \n아직 멀었군요^^");  //타이머 멈춘 시점  알람 출력
+            break;
+            case "6초" : alert("당신의 기록은 " + timerReturn.innerHTML + "s 입니다. \n저희 집 강아지 온유도 6초는 합니다^^");  //타이머 멈춘 시점  알람 출력
+            break;
+            case "5초" : alert("당신의 기록은 " + timerReturn.innerHTML + "s 입니다. \n게이머 평균은 4초대 입니다^^");  //타이머 멈춘 시점  알람 출력
+            break;
+            case "4초" : alert("당신의 기록은 " + timerReturn.innerHTML + "s 입니다. \n딱 평균만큼만 하시게요? ^^");  //타이머 멈춘 시점  알람 출력
+            break;
+            case "3초" : alert("당신의 기록은 " + timerReturn.innerHTML + "s 입니다. \n인정합니다^^");  //타이머 멈춘 시점  알람 출력
+            break;
+            case "2초" : alert("당신의 기록은 " + timerReturn.innerHTML + "s 입니다. \nGOD " +nameArea.innerHTML );  //타이머 멈춘 시점  알람 출력
+            break;
+        }
+    }
 
 
     initialize();
@@ -63,3 +112,4 @@ window.onload = function(){
     movingButton.addEventListener('click' , buttonClick);   // 버튼을 클릭하면 buttonClick 함수 실행
     
 }
+
