@@ -36,9 +36,9 @@ body {
 }
 
 #nameArea {
-  text-align: center;
   font-size: 30px;
   font-weight: bold;
+  text-align: center;
 }
 
 #countReturn,
