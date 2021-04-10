@@ -34,7 +34,7 @@ window.onload = function(){
     function buttonClick(){
         c += 1;  // 매 회 클릭마다 카운터 변수는 조건없이 바로 +1
 
-        if(!gameStartEnd() || (gameStartEnd() && c < 10)){ // 시작전이거나 , 진행중이면서 카운트가 10 이하면
+        if(!gameStartEnd() || (gameStartEnd() && c < 10)){ // 시작전이거나 , 진행중이면서 카운트가 10 이하면      -- 게임set의 기준을 바꾸려면 이것 숫자를 바꿔야함
             if(!gameStartEnd()){    // 시작전이면 
                 timer = setInterval(function(){  // 타이머!!
                 timerReturn.innerHTML = t/100;    
@@ -89,17 +89,17 @@ window.onload = function(){
             gradeReturn = "3초미만"
         }
         switch(gradeReturn){
-            case "7초이상" : alert("당신의 기록은 " + timerReturn.innerHTML + "s 입니다. \n아직 멀었군요^^");  //타이머 멈춘 시점  알람 출력
+            case "7초이상" : alert("당신의 기록은 " + timerReturn.innerHTML + "s 입니다. \n아직 멀었군요^^");                   //타이머 멈춘 시점  알람 출력
             break;
-            case "6초" : alert("당신의 기록은 " + timerReturn.innerHTML + "s 입니다. \n저희 집 강아지 온유도 6초는 합니다^^");  //타이머 멈춘 시점  알람 출력
+            case "6초" : alert("당신의 기록은 " + timerReturn.innerHTML + "s 입니다. \n저희 집 강아지 온유도 6초는 합니다^^");  
             break;
-            case "5초" : alert("당신의 기록은 " + timerReturn.innerHTML + "s 입니다. \n게이머 평균은 4초대 입니다^^");  //타이머 멈춘 시점  알람 출력
+            case "5초" : alert("당신의 기록은 " + timerReturn.innerHTML + "s 입니다. \n게이머 평균은 4초대 입니다^^");  
             break;
-            case "4초" : alert("당신의 기록은 " + timerReturn.innerHTML + "s 입니다. \n딱 평균만큼만 하시게요? ^^");  //타이머 멈춘 시점  알람 출력
+            case "4초" : alert("당신의 기록은 " + timerReturn.innerHTML + "s 입니다. \n딱 평균만큼만 하시게요? ^^");  
             break;
-            case "3초" : alert("당신의 기록은 " + timerReturn.innerHTML + "s 입니다. \n인정합니다^^");  //타이머 멈춘 시점  알람 출력
+            case "3초" : alert("당신의 기록은 " + timerReturn.innerHTML + "s 입니다. \n인정합니다^^");  
             break;
-            case "3초미만" : alert("당신의 기록은 " + timerReturn.innerHTML + "s 입니다. \nGOD " +nameArea.innerHTML );  //타이머 멈춘 시점  알람 출력
+            case "3초미만" : alert("당신의 기록은 " + timerReturn.innerHTML + "s 입니다. \nGOD " +nameArea.innerHTML ); 
             break;
         }
     }   
