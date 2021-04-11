@@ -7,15 +7,27 @@
 <body>
     <h1>array in function</h1>
     <script>
-        function get_members(){
-            return ['egoing', 'k8805', 'sorialgi'];
-        }
-        var members = get_members();   
-        
-        for(var i = 0; i < members.length; i++){                
-            document.write(members[i].toUpperCase()+'<br>');  
-        }
-        
+function zero(){
+    console.log(
+        zero.length,
+        arguments.length
+    );
+}
+function one(arg1){
+    console.log(
+       one.length,
+        arguments.length
+    );
+}
+function two(arg1, arg2, "1"){
+    console.log(
+        two.length,
+        arguments.length
+    );
+}
+zero(); // zero.length 0 arguments 0 
+one('val1', 'val2');  // one.length 1 arguments 2 
+two('val1');  // two.length 2 arguments 1
     </script>
 </body>
 </html>

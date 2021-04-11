@@ -6,58 +6,25 @@
     <title>Document</title>
 </head>
 <body>
-    
-    <script>
-        var a = 10;
-        var b = 20;
-        var c = 30;
-        function outer_func() {
-            var b = 200;
-            var c = 300;
-            inner_func();
-        }
+  <script>
+      function sum(){
+        var i, _sum = 0;    
+        for(i = 0; i < arguments.length; i++){
+            _sum += arguments[i];
+        }   
+        return _sum;
+}
+document.write(sum(1,2,3,4,5));
+  </script>
 
-        function inner_func() {
-            var c = 3000;
-            document.write(a + "<br />");
-            document.write(b + "<br />"); //b 값이 20이 출력됨
-            document.write(c + "<br />");
-        }
 
-        outer_func();  
-    </script>
 
-    <script>
-        var a =10;
-        var b =20;
-        var c =30;
-        function outer_func(){
-            var b=200;
-            var c=300;
-            
-            function inner_func(){
-                var c=3000;
-                document.write(a+"<br />");
-                document.write(b+ "<br />"); //b값이 200 이 출력됨
-                document.write(c + "<br />");
-            }
-            inner_func();
-        }
-        outer_func();
-    </script>   
-    <script>
-          let j = 'outter block scope' 
-        function a(){
-            {
-                let j = 'inner block scope';
-                document.write( 'in the block: ', j +'<br>' );
-            }
-                document.write('out of the block: ', j +'<br>');
-        }
 
-        a();
-    </script>
 
-    
+
+
+
+
+        
 </body>
 </html>
