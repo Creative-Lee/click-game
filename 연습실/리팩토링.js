@@ -46,6 +46,8 @@ window.onload = function(){
             movingButton.style.gridArea = 'click'+ Math.round((Math.random()*24));  //첫 버튼 움직임!!    
 
             count.innerHTML = c + "/10" ;  //카운터 1        -- 게임set의 기준을 바꾸려면 이것 숫자를 바꿔야함
+
+            window.navigator.vibrate(150);
         }
         else{
             result();
