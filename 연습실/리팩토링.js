@@ -47,7 +47,7 @@ window.onload = function(){
 
             count.innerHTML = c + "/10" ;  //카운터 1        -- 게임set의 기준을 바꾸려면 이것 숫자를 바꿔야함
 
-            window.navigator.vibrate(150);
+            window.navigator.vibrate(150);  // 쮜이이이잉~
         }
         else{
             result();
@@ -91,7 +91,7 @@ window.onload = function(){
             gradeReturn = "3초미만"
         }
         switch(gradeReturn){
-            case "7초이상" : alert("당신의 기록은 " + timerReturn.innerHTML + "s 입니다. \n아직 멀었군요^^");                   //타이머 멈춘 시점  알람 출력
+            case "7초이상" : alert("당신의 기록은 " + timerReturn.innerHTML + "s 입니다. \n착잡한 심정입니다...");                   //타이머 멈춘 시점  알람 출력
             break;
             case "6초" : alert("당신의 기록은 " + timerReturn.innerHTML + "s 입니다. \n저희 집 강아지 온유도 6초는 합니다^^");  
             break;

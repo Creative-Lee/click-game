@@ -15,6 +15,11 @@ body {
   
 }
 
+#bgm {
+  width: 100px;
+  height: 30px;   
+}
+
 #catch {
   -webkit-appearance: none; 
   position: relative;
