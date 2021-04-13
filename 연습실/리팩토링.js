@@ -91,7 +91,7 @@ window.onload = function(){
             gradeReturn = "3초미만"
         }
         switch(gradeReturn){
-            case "7초이상" : alert("당신의 기록은 " + timerReturn.innerHTML + "s 입니다. \n착잡한 심정입니다...");                   //타이머 멈춘 시점  알람 출력
+            case "7초이상" : alert("당신의 기록은 " + timerReturn.innerHTML + "s 입니다. \n당신의 기록... 착잡한 심정입니다...");                   //타이머 멈춘 시점  알람 출력
             break;
             case "6초" : alert("당신의 기록은 " + timerReturn.innerHTML + "s 입니다. \n저희 집 강아지 온유도 6초는 합니다^^");  
             break;

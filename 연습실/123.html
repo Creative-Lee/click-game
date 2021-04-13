@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    function result(){
+        let grade = timerReturn.innerHTML;
+    
+        if(grade >= 7){
+            alert("당신의 기록은 " + timerReturn.innerHTML + "s 입니다. \n당신의 기록... 착잡한 심정입니다...");
+        }
+        if((6 <= grade < 7)){
+            alert("당신의 기록은 " + timerReturn.innerHTML + "s 입니다. \n저희 집 강아지 온유도 6초는 합니다^^");
+        }
+        if((5 <= grade < 6)){
+            alert("당신의 기록은 " + timerReturn.innerHTML + "s 입니다. \n게이머 평균은 4초대 입니다^^");
+        }
+        if((4 <= grade < 5)){
+            alert("당신의 기록은 " + timerReturn.innerHTML + "s 입니다. \n딱 평균만큼만 하시게요? ^^");  
+        }
+        if((3 <= grade < 4)){
+            alert("당신의 기록은 " + timerReturn.innerHTML + "s 입니다. \n인정합니다^^");
+        }
+        if(grade < 3){
+            alert("당신의 기록은 " + timerReturn.innerHTML + "s 입니다. \nGOD " +nameArea.innerHTML );
+        }
+    }
+    </script>
+</body>
+</html>
