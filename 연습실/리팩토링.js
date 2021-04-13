@@ -68,41 +68,63 @@ window.onload = function(){
     //사용자 이름 받아오기 로직 끝 
 
     //결과창 로직
+//function result(){
+//    let grade = timerReturn.innerHTML
+//    let gradeReturn;
+//
+//    if(grade >= 7){
+//        gradeReturn = "7초이상"
+//    }
+//    else if((6 <= grade) && (grade < 7)){
+//        gradeReturn = "6초"
+//    }
+//    else if((5 <= grade) && (grade < 6)){
+//        gradeReturn = "5초"
+//    }
+//    else if((4 <= grade) && (grade < 5)){
+//        gradeReturn = "4초"
+//    }
+//    else if((3 <= grade) && (grade < 4)){
+//        gradeReturn = "3초"
+//    }
+//    else if(grade < 3){
+//        gradeReturn = "3초미만"
+//    }
+//    switch(gradeReturn){
+//        case "7초이상" : alert("당신의 기록은 " + timerReturn.innerHTML + "s 입니다. \n당신의 기록... 착잡한 심정입니다...");                   //타이머 멈춘 시점  알람 출력
+//        break;
+//        case "6초" : alert("당신의 기록은 " + timerReturn.innerHTML + "s 입니다. \n저희 집 강아지 온유도 6초는 합니다^^");  
+//        break;
+//        case "5초" : alert("당신의 기록은 " + timerReturn.innerHTML + "s 입니다. \n게이머 평균은 4초대 입니다^^");  
+//        break;
+//        case "4초" : alert("당신의 기록은 " + timerReturn.innerHTML + "s 입니다. \n딱 평균만큼만 하시게요? ^^");  
+//        break;
+//        case "3초" : alert("당신의 기록은 " + timerReturn.innerHTML + "s 입니다. \n인정합니다^^");  
+//        break;
+//        case "3초미만" : alert("당신의 기록은 " + timerReturn.innerHTML + "s 입니다. \nGOD " +nameArea.innerHTML ); 
+//        break;
+//    }
+//}
     function result(){
-        let grade = timerReturn.innerHTML
-        let gradeReturn;
+        let grade = timerReturn.innerHTML;
     
         if(grade >= 7){
-            gradeReturn = "7초이상"
+            alert("당신의 기록은 " + grade + "s 입니다. \n당신의 기록... 착잡한 심정입니다...");
         }
-        else if((6 <= grade) && (grade < 7)){
-            gradeReturn = "6초"
+        if((6 <= grade) && (grade < 7)){
+            alert("당신의 기록은 " + grade + "s 입니다. \n저희 집 강아지 온유도 6초는 합니다^^");
         }
-        else if((5 <= grade) && (grade < 6)){
-            gradeReturn = "5초"
+        if((5 <= grade) && (grade < 6)){
+            alert("당신의 기록은 " + grade + "s 입니다. \n게이머 평균은 4초대 입니다^^");
         }
-        else if((4 <= grade) && (grade < 5)){
-            gradeReturn = "4초"
+        if((4 <= grade) && (grade < 5)){
+            alert("당신의 기록은 " + grade + "s 입니다. \n딱 평균만큼만 하시게요? ^^");  
         }
-        else if((3 <= grade) && (grade < 4)){
-            gradeReturn = "3초"
+        if((3 <= grade) && (grade < 4)){
+            alert("당신의 기록은 " + grade + "s 입니다. \n인정합니다^^");
         }
-        else if(grade < 3){
-            gradeReturn = "3초미만"
-        }
-        switch(gradeReturn){
-            case "7초이상" : alert("당신의 기록은 " + timerReturn.innerHTML + "s 입니다. \n당신의 기록... 착잡한 심정입니다...");                   //타이머 멈춘 시점  알람 출력
-            break;
-            case "6초" : alert("당신의 기록은 " + timerReturn.innerHTML + "s 입니다. \n저희 집 강아지 온유도 6초는 합니다^^");  
-            break;
-            case "5초" : alert("당신의 기록은 " + timerReturn.innerHTML + "s 입니다. \n게이머 평균은 4초대 입니다^^");  
-            break;
-            case "4초" : alert("당신의 기록은 " + timerReturn.innerHTML + "s 입니다. \n딱 평균만큼만 하시게요? ^^");  
-            break;
-            case "3초" : alert("당신의 기록은 " + timerReturn.innerHTML + "s 입니다. \n인정합니다^^");  
-            break;
-            case "3초미만" : alert("당신의 기록은 " + timerReturn.innerHTML + "s 입니다. \nGOD " +nameArea.innerHTML ); 
-            break;
+        if(grade < 3){
+            alert("당신의 기록은 " + grade + "s 입니다. \nGOD " +nameArea.innerHTML );
         }
     }   
     //결과창 로직 끝
