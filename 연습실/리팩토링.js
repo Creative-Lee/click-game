@@ -107,24 +107,30 @@ window.onload = function(){
 //}
     function result(){
         let grade = timerReturn.innerHTML;
-    
+
+        const baseNotice = "당신의 기록은 " + grade + "s 입니다. \n" 
+
+        function aaa(notice){
+            alert(baseNotice + notice);
+        }
+
         if(grade >= 7){
-            alert("당신의 기록은 " + grade + "s 입니다. \n당신의 기록... 착잡한 심정입니다...");
+            aaa("당신의 기록... 착잡한 심정입니다...")
         }
         if((6 <= grade) && (grade < 7)){
-            alert("당신의 기록은 " + grade + "s 입니다. \n저희 집 강아지 온유도 6초는 합니다^^");
+            aaa("저희 집 강아지 온유도 6초는 합니다^^");
         }
         if((5 <= grade) && (grade < 6)){
-            alert("당신의 기록은 " + grade + "s 입니다. \n게이머 평균은 4초대 입니다^^");
+            aaa("게이머 평균은 4초대 입니다^^");
         }
         if((4 <= grade) && (grade < 5)){
-            alert("당신의 기록은 " + grade + "s 입니다. \n딱 평균만큼만 하시게요? ^^");  
+            aaa("딱 평균만큼만 하시게요? ^^");  
         }
         if((3 <= grade) && (grade < 4)){
-            alert("당신의 기록은 " + grade + "s 입니다. \n인정합니다^^");
+            aaa("마지못해 인정합니다^^");
         }
         if(grade < 3){
-            alert("당신의 기록은 " + grade + "s 입니다. \nGOD " +nameArea.innerHTML );
+            aaa("GOD " +nameArea.innerHTML);
         }
     }   
     //결과창 로직 끝
