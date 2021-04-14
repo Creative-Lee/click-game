@@ -114,23 +114,23 @@ window.onload = function(){
             alert(baseNotice + notice);
         }
 
-        if(grade >= 7){
-            aaa("당신의 기록... 착잡한 심정입니다...")
+        if(grade < 3.0){
+            aaa("GOD " +nameArea.innerHTML)
         }
-        if((6 <= grade) && (grade < 7)){
-            aaa("저희 집 강아지 온유도 6초는 합니다^^");
-        }
-        if((5 <= grade) && (grade < 6)){
-            aaa("게이머 평균은 4초대 입니다^^");
-        }
-        if((4 <= grade) && (grade < 5)){
-            aaa("딱 평균만큼만 하시게요? ^^");  
-        }
-        if((3 <= grade) && (grade < 4)){
+        else if(Math.floor(grade) === 3.0){
             aaa("마지못해 인정합니다^^");
         }
-        if(grade < 3){
-            aaa("GOD " +nameArea.innerHTML);
+        else if(Math.floor(grade) === 4.0){
+            aaa("딱 평균만큼만 하시게요? ^^");  
+        }
+        else if(Math.floor(grade) === 5.0){
+            aaa("게이머 평균은 4초대 입니다^^");
+        }
+        else if(Math.floor(grade) === 6.0){
+            aaa("저희 집 강아지 온유도 6초는 합니다^^");
+        }
+        else{  // 나머지 7초 이상
+            aaa("당신의 기록... 착잡한 심정입니다...");
         }
     }   
     //결과창 로직 끝
