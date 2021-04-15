@@ -13,43 +13,48 @@
 
         const baseNotice = "당신의 기록은 " + grade + "s 입니다. \n" 
 
-        function aaa(notice){           
+        function rankMsg(notice){           
                 alert(baseNotice + notice);
             }
 
+        function checkGrade(cut1,cut2){
+            if(cut1 <= grade && grade < cut2){
+                return true;
+            } 
+        }
+        
         if(grade < 3.0){
-            aaa("GOD " +nameArea.innerHTML)
+            rankMsg("GOD " +nameArea.innerHTML);
         }
-        else if(Math.floor(grade) = 3.0){
-            aaa("마지못해 인정합니다^^");
+        else if(checkGrade(3.0,4.0)){
+            rankMsg("마지못해 인정합니다^^");
         }
-        else if(Math.floor(grade) = 4.0){
-            aaa("딱 평균만큼만 하시게요? ^^");  
+        else if(checkGrade(4.0,5.0)){
+            rankMsg("딱 평균만큼만 하시게요? ^^");  
         }
-        else if(Math.floor(grade) = 5.0){
-            aaa("게이머 평균은 4초대 입니다^^");
+        else if(checkGrade(5.0,6.0)){
+            rankMsg("게이머 평균은 4초대 입니다^^");
         }
-        else if(Math.floor(grade) = 6.0){
-            aaa("저희 집 강아지 온유도 6초는 합니다^^");
+        else if(checkGrade(6.0,7.0)){
+            rankMsg("저희 집 강아지 온유도 6초는 합니다^^");
         }
         else{  // 나머지 7초 이상
-            aaa("당신의 기록... 착잡한 심정입니다...");
+            rankMsg("당신의 기록... 착잡한 심정입니다...");
         }
     }
 
     switch(Math.floor(grade)){
-        case "7.0" : alert("당신의 기록은 " + timerReturn.innerHTML + "s 입니다. \n당신의 기록... 착잡한 심정입니다...");  
+        case 2.0 , 1.0 , 0  : rankMsg("GOD " +nameArea.innerHTML);
         break;
-        case "6.0" : alert("당신의 기록은 " + timerReturn.innerHTML + "s 입니다. \n저희 집 강아지 온유도 6초는 합니다^^");  
+        case 3.0 : rankMsg("마지못해 인정합니다^^");
         break;
-        case "5.0" : alert("당신의 기록은 " + timerReturn.innerHTML + "s 입니다. \n게이머 평균은 4초대 입니다^^");  
+        case 4.0 :  rankMsg("딱 평균만큼만 하시게요? ^^");  
         break;
-        case "4.0" : alert("당신의 기록은 " + timerReturn.innerHTML + "s 입니다. \n딱 평균만큼만 하시게요? ^^");  
+        case 5.0 :  rankMsg("게이머 평균은 4초대 입니다^^");
         break;
-        case "3.0" : alert("당신의 기록은 " + timerReturn.innerHTML + "s 입니다. \n인정합니다^^");  
+        case 6.0 :  rankMsg("저희 집 강아지 온유도 6초는 합니다^^");
         break;
-        case "3초미만" : alert("당신의 기록은 " + timerReturn.innerHTML + "s 입니다. \nGOD " +nameArea.innerHTML ); 
-        break;
+        default : rankMsg("당신의 기록... 착잡한 심정입니다...");
     }
    
     </script>
