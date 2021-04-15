@@ -82,26 +82,20 @@ window.onload = function(){
         function rankMsg(notice){
             alert(baseNotice + notice);
         }
-        
-        function checkGrade(cut){
-            if(grade < cut){
-                return true;
-            } 
-        }
-        
-        if(checkGrade(3.0)){
+    
+        if(grade < 3.0){
             rankMsg("GOD " + playerName);
         }
-        else if(checkGrade(4.0)){
+        else if(grade < 4.0){
             rankMsg("마지못해 인정합니다^^");
         }
-        else if(checkGrade(5.0)){
+        else if(grade < 5.0){
             rankMsg("딱 평균만큼만 하시게요? ^^");  
         }
-        else if(checkGrade(6.0)){
+        else if(grade < 6.0){
             rankMsg("게이머 평균은 4초대 입니다^^");
         }
-        else if(checkGrade(7.0)){
+        else if(grade < 7.0){
             rankMsg("저희 집 강아지 온유도 6초는 합니다^^");
         }
         else{  // 나머지 7초 이상
