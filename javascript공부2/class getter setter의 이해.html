@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      class User {
+        constructor(firstName, lastName, age){
+          this.firstName = firstName;
+          this.lastName = lastName;
+          this.age = age;
+        }
+        get age(){
+          return this._age
+        }
+        set age(value){
+          this._age = value
+        }
+      }
+      const user1 = new User('도현','리',-1);
+      console.log(user1.age)
+    </script>
+</body>
+</html>
