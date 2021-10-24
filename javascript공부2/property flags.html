@@ -15,19 +15,25 @@
         name: "Lee"
       };
 
-      let 설명자 = Object.getOwnPropertyDescriptor(userInfo, 'name');
-      console.log(설명자);
+      let 설명자1 = Object.getOwnPropertyDescriptor(userInfo, 'name');
+      console.log(설명자1);
 
 			Object.defineProperty(userInfo, 'name' , {
-				writable : false
+				writable : false,
+        value : 'Kim'
 			});
 
-			설명자 = Object.getOwnPropertyDescriptor(userInfo, 'name');
-			console.log(설명자);
-			
-			userInfo.name = "kim"
-		
+			설명자1 = Object.getOwnPropertyDescriptor(userInfo, 'name');
+			console.log(설명자1);
+				
+      Object.defineProperty(userInfo, 'age' , {
+        value : 18         
+			});
+      console.log(userInfo);
 
+      let 설명자2 = Object.getOwnPropertyDescriptor(userInfo, 'age');
+      console.log(설명자2);
+    
     </script>
 </body>
 </html>
