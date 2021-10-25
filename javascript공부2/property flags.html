@@ -11,28 +11,31 @@
     <script>
 			"use strict"
 
-      let userInfo = {
-        name: "Lee"
+      let user = {
+        firstName: "Lee",
+        lastName: "Do",
+        get fullName(){
+          return `${this.firstName} ${this.lastName}`;
+        },
+        set fullName(value){
+          [this.firstName,this.lastName] = value.split(" ");
+        }
       };
+      console.log(user.fullName)
 
-      let 설명자1 = Object.getOwnPropertyDescriptor(userInfo, 'name');
+      let 설명자1 = Object.getOwnPropertyDescriptor(user, 'fullName');
       console.log(설명자1);
+      Object.defineProperty(user, 'hiddenName', {
+        get(){
+          return this._hiddenName;
+        },
+        set(value){
+          this._hiddenName = value;
+        } })
+      user.hiddenName = 'DDDDD';
+      console.log(user.hiddenName)
 
-			Object.defineProperty(userInfo, 'name' , {
-				writable : false,
-        value : 'Kim'
-			});
 
-			설명자1 = Object.getOwnPropertyDescriptor(userInfo, 'name');
-			console.log(설명자1);
-				
-      Object.defineProperty(userInfo, 'age' , {
-        value : 18         
-			});
-      console.log(userInfo);
-
-      let 설명자2 = Object.getOwnPropertyDescriptor(userInfo, 'age');
-      console.log(설명자2);
     
     </script>
 </body>
