@@ -15,7 +15,7 @@ window.onload = function(){
 
     const timerReturn = document.getElementById("timerReturn"); //타이머 html
     let t;  // 타이머 변수
-    let timer;  // setInterval(function(){})를 담을거임  clearInterval 시발놈 이거때매 알게됨 
+    let timer;  // setInterval(function(){})를 담을거임 
 
     const nameArea = document.getElementById("nameArea"); 
     let playerName;
