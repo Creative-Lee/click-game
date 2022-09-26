@@ -1,0 +1,19 @@
+{
+  "name": "q",
+  "version": "1.0.0",
+  "description": "코딩을 접하고 처음 만들었던 클릭게임😂",
+  "main": "클릭게임.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",    
+    "url": "git+https://github.com/Creative-Lee/click-game.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Creative-Lee/click-game/issues"
+  },
+  "homepage": "https://creative-lee.github.io/click-game/클릭게임.html"  
+}
